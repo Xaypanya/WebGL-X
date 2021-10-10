@@ -16,7 +16,7 @@
 
 
         canvas {
-            border: 10px solid rgb(97, 97, 97);
+            /* border: 10px solid rgb(97, 97, 97); */
             border-radius: 5px;
             width: 500px;
             height: 500px;
@@ -28,9 +28,19 @@
       </style>
    </head>
    <body>
-    <canvas width = "400" height = "400" id = "my_Canvas"></canvas>
+     
+
+ 
+
+
+
+      <canvas width = "400" height = "400" id = "my_Canvas"></canvas>
 
       <script>
+
+
+         
+
          /*============= Creating a canvas ==================*/
          var canvas = document.getElementById('my_Canvas');
          gl = canvas.getContext('experimental-webgl');
@@ -838,7 +848,7 @@
          /*============Drawing the Quad====================*/
 
          // Clear the canvas
-         gl.clearColor(0.598,0.863,0.765, 0.9);
+         gl.clearColor(1,1,1,1);
 
          // Enable the depth test
          gl.enable(gl.DEPTH_TEST);
@@ -858,7 +868,9 @@
          // gl.drawArrays(gl.TRIANGLES, 0, 6)
          // gl.drawElements(gl.LINES, indices.length, gl.UNSIGNED_SHORT,0);
 
-         
+       
+
+
       </script>
    </body>
 </html>
